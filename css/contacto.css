@@ -1,0 +1,136 @@
+
+.contact {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 40px;
+}
+
+.form-container {
+    width: 48%; 
+}
+
+.contact-info {
+    width: 48%; 
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
+
+.hours {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hours h3 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.faq-map-container {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 40px;
+}
+
+.faq {
+    width: 48%;
+}
+
+.faq h3 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.faq ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq li {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.map {
+    width: 48%; 
+    text-align: center; 
+}
+
+.map h3 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .contact-container, .faq-map-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container, .contact-info, .faq, .map {
+        width: 90%;
+    }
+}
